@@ -11,7 +11,7 @@ import net.enclosing.gmail.SendMailGmail;
 public class Remind {
 	private static final int remindingDuration = 10;
 	private static final int span = 100;
-	private static final String remindedAddress = "project.102178079@todoist.net";
+	private static final String remindedAddress = "project.yyyyyy@todoist.net";
 	private static final int TIMES = 10;
 	public static void main(String[] args) {
 		new Remind();
@@ -31,8 +31,8 @@ public class Remind {
 			
 			EncodeStr encodeStr = new EncodeStr();
 			SendMailGmail sendMailGmail = new SendMailGmail();
-			sendMailGmail.setGmailAccount("toukubo@gmail.com");
-			sendMailGmail.setGmailPassword("zaq12wsx0101");
+			sendMailGmail.setGmailAccount("yyyyyy@gmail.com");
+			sendMailGmail.setGmailPassword("zzzzzz");
 			sendMailGmail.setMailTo(remindedAddress);
 			sendMailGmail.setMailSubject(encodeStr.utf82Iso2022jp(remindedString));
 			sendMailGmail.setMailBody(encodeStr.utf82Iso2022jp(remindedString));
